@@ -29,4 +29,64 @@ int pop(Node*& head);
 // @ parameter head is list of head
 // @ parameter n is n th node in list
 // @ parameter data is node of data need to add
+// algorithm is create new node, node point to node in position n th, then node n - 1 point new node, this is push 's algorithm, so we only need to reference next 's node n th
 void insertNthList(Node*& head, int n, int data);
+
+// this function add newNode in list head is sorted and newNode is located in correct sorted position in list
+// @ parameter head is sorted head
+// @ parameter newNode is new node is existing node by user
+void SortedInsert(Node **head, Node *newNode);
+
+// this function sorted list with algorithm insertion sort
+// @ parameter pToHead is pointer point to list of head need to sort increasing order.
+void InsertSort(Node **pToHead);
+
+// this function append list2 to list1 and list2 to NULL
+// @ parameter pToHead1 is pointer, which point list1
+// @ parameter pToHead2 is pointer, which point list2
+void append(Node **pToHead1, Node **pToHead2);
+
+// this function split list source 2 list is front and back
+// @ parameter source is list need to split
+// @ refFront is front half
+// @ refBack is back half
+void splitFrontBack(Node *source, Node **refFront, Node **refBack);
+
+// this function take a list sorted in increasing order and delete any duplicate node in the list
+// @ parameter head is list of head.
+void removeDuplicates(Node *head);
+
+// this function remove the front node from second list, then push it onto the front of the first
+// @ parameter destRef is pointer, which point to first list
+// @ parameter sourceRef is pointer, which point to second list
+void moveNode(Node **destRef, Node **sourceRef);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
